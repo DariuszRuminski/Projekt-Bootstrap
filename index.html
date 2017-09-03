@@ -216,18 +216,35 @@
     <!-- section contact start -->
 
 <section id="contact" class="text-center">
-    <div class="container">
-        <div class="row">
-            <h2>CONTACT US</h2>
-            <p>Lorem ipsum dolor sit amet</p>
-            <div class="col-md-6">
-            
-            </div>
-            
-            <div class="col-md-6">
+    <div id="contact-backgroud-image">
+        <div class="container">
+            <div class="row">
+                <h2>CONTACT US</h2>
+                <p>Lorem ipsum dolor sit amet</p>
+                <form id="contact-form">
+                    <div class="col-md-6">
+                        <label for="name"></label>
+                        <input type="text" id="name" placeholder="Your Name*"><br>
+                        <label for="e-mail"></label>
+                        <input type="email" id="e-mail" placeholder="Your Email*"><br>
+                        <label for="phone"></label>
+                        <input type="number" id="phone" placeholder="Your Phone*">
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="text-massage"></label>
+                        <textarea id="text-massage" placeholder="Your Massage*" maxlength="100" rows="9" cols="9"></textarea>
+                    </div>
+                    
+                    <div class="col-md-12">
+                        <div class="contact-submit">
+                            <label for="contact-submit"></label>
+                            <input type="submit" id="contact-submit" value="SEND MASSAGE">
+                        </div>
+                    </div>
+                </form>
 
             </div>
-
         </div>
     </div>
 </section>
