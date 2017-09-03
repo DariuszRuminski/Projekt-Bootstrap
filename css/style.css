@@ -307,3 +307,50 @@ body{
     color: white;
     margin-bottom: 100px;
 }
+
+
+/*footer*/
+
+#main-footer{
+    padding: 10px 0;
+}
+
+#mian-footer nav,
+#main-footer .copyrights{
+    line-height: 50px;
+    margin: 0;
+}
+
+#main-footer .social-icons{
+    text-align: center;
+}
+
+#main-footer nav ul li{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#main-footer nav ul li a{
+    color: #777;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    transition: all 0.4s;
+}
+
+#main-footer nav ul li a:hover{
+    color: #0ed8d6;
+}
+
+
+przygotuj plik responsive.css, a w nim:
+-do 768:
+zmien kolor tla dla #main-nav i #main-nav.scrolled na biały.
+zmien kolory linkow w navie na #0ed8d6, na #777.
+linki przyklej do prawej strony ul.
+zmien kolor BELEK BURGERA (.icon-bar) na #0ed8d6.
+w sekcji contact odsun marginesem poszczegolne kolumny( margin-bootom) footer - wszystko w text-align
+:center, zmniejsz padddingi na ul li.
+
+-do 480:
+zmien font-size dla h1, h2/h3 w header.
+
