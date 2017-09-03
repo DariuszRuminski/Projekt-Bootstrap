@@ -16,6 +16,10 @@ body{
     border: none;
 }
 
+.navbar-header{
+    color: white;
+}
+
 .navbar .container a{
     font-family: "Montserrat";
     color: white;
@@ -104,9 +108,11 @@ body{
 
 
 /*section services*/
-section, .col-md-4{
-    padding: 60px;
-
+#services, .col-md-4{
+    padding: 35px;
+}
+#services .container .row p{
+    padding: 35px;
 }
 
 #services .fa{
@@ -118,7 +124,7 @@ section, .col-md-4{
     border: 1px solid #0ed8d6;
     background-color: #0ed8d6;
     font-size: 3em;
-    transition: all 0.4s;
+    transition: all 0.6s;
 }
 
 #services .fa:hover{
@@ -131,6 +137,15 @@ section, .col-md-4{
     font-family: "Montserrat", sans-serif;
     font-size: 3em;
     font-weight: 600;
+}
+
+#portfolio{
+    background-color: whitesmoke;
+    padding: 35px;
+}
+
+.single-portfolio-item{
+    background-color: white;
 }
 
 #portfolio h2{
@@ -198,6 +213,50 @@ section, .col-md-4{
     color: white;
 }
 
-.row .col-md-4 .single-portfolio-item{
-    background-color: rgba(14, 216, 214, 0.3);
+#team{
+    padding: 35px 0 60px 0;
 }
+
+#team h2{
+    font-family: "Montserrat", sans-serif;
+    font-size: 3em;
+    font-weight: 600;
+}
+
+#team h3{
+    font-weight: 600;
+}
+
+#team p{
+    color: #777777;
+    font-style: italic;
+}
+
+.team-image img{
+    width: 70%;
+    border-radius: 50%;
+}
+
+.team-icons i{
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    color: white;
+    background-color: black;
+    font-size: 2em;
+    transition: all 0.4s;
+    cursor: pointer;
+    
+}
+
+.team-icons i:hover{
+    background-color: #0ed8d6;
+    
+}
+
+.team-p-padding{
+    padding: 0 100px 10px 100px;
+}
+
