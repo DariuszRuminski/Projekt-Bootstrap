@@ -16,8 +16,8 @@ body{
     border: none;
 }
 
-.navbar-header{
-    color: white;
+.navbar-brand{
+    color: white !important;
 }
 
 .navbar .container a{
@@ -162,7 +162,7 @@ body{
 }
 
 .portfolio-image-container{
-   overflow: hidden;  /*nie pozwalamy żeby coś wyszło za jego ramke*/
+   overflow: hidden;
 }
 
 #portfolio-item-1{
@@ -315,14 +315,18 @@ body{
     padding: 10px 0;
 }
 
-#mian-footer nav,
-#main-footer .copyrights{
-    line-height: 50px;
+#main-footer #footer-nav,
+#main-footer .copyright{
+    line-height: 40px;
     margin: 0;
 }
 
 #main-footer .social-icons{
     text-align: center;
+    font-size: 30px;
+}
+#main-footer .social-icons a{
+    padding: 0 30px;
 }
 
 #main-footer nav ul li{
@@ -342,15 +346,70 @@ body{
 }
 
 
-przygotuj plik responsive.css, a w nim:
--do 768:
-zmien kolor tla dla #main-nav i #main-nav.scrolled na biały.
-zmien kolory linkow w navie na #0ed8d6, na #777.
-linki przyklej do prawej strony ul.
-zmien kolor BELEK BURGERA (.icon-bar) na #0ed8d6.
-w sekcji contact odsun marginesem poszczegolne kolumny( margin-bootom) footer - wszystko w text-align
-:center, zmniejsz padddingi na ul li.
-
--do 480:
-zmien font-size dla h1, h2/h3 w header.
+@media screen and (max-width: 768px){
+    #main-header .first h1{
+        font-size: 40px;
+        padding: 20px;
+    }
+    #main-header .first h3{
+        font-size: 20px;
+    }
+    #main-header .first button{
+        font-size: 16px;
+    }
+    
+    #services,
+    #portfolio{
+        padding: 5px;
+    }
+    #services h2,
+    #portfolio h2,
+    #team h2{
+        font-size: 30px;
+    }
+    #services .container .row p{
+        padding: 15px;
+    }
+    #services, .col-md-4{
+        padding: 10px;
+    }
+    
+    .team-image img{
+        width: 50%;
+    }
+    .team-p-padding{
+        padding: 0 10px;
+    }
+    
+    #contact h2{
+        padding-top: 20px;
+        font-size: 30px;
+    }
+    #contact-submit{
+        font-size: 16px;
+        padding: 10px;
+        margin-bottom: 40px;
+    }
+    
+    #main-footer{
+        padding: 0;
+    }
+    #main-footer #footer-nav, 
+    #main-footer .copyright{
+        text-align: center;
+    }
+    #main-footer .social-icons a{
+        padding: 0 10px;
+    }
+    #footer-nav ul{
+        padding-left: 0;
+    }
+    
+    .navbar-default .navbar-nav > li > a{
+        color: white;
+    }
+    #bs-example-navbar-collapse-1{
+        background-color: #0ed8d6;
+    }
+}
 
